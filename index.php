@@ -1,0 +1,1 @@
+<?php include("includes/db_connect.php") ?><?php session_start();?>   <!DOCTYPE html><html>	<?php include("head.php"); ?>	<body>		<?php include("intro.php"); ?>		<?php include("section.php"); ?>		<?php include("footer.php"); ?>	</body></html>
