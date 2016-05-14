@@ -7,7 +7,8 @@ include("head.php");
 <html lang="en">
     <body>
         <div class="bodytest">
-            <?php include 'menu.php'; ?>		
+            <?php include 'menu.php'; ?>
+            <?php if ($manager->connexion() == true){ } else { header('Location: login.php'); }?>
             <div class="row" style="padding-top:8%; width:100%; margin:auto">
                 <div class="col-md-4">      
                 </div>

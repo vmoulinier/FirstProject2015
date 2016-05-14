@@ -55,6 +55,7 @@ include ( "head.php");
                                         <div class="col-md-3" style="padding-right:6%; margin:auto;">
                                             <label style="color:black;">&nbsp; </label>
                                             <br />
+                                            <input type="hidden" name="id_produit" value="<?php echo $row2['id_produit']; ?>">
                                             <input type="submit" name="supprimer" class="btn btn-danger" value="Supprimer" /> 
                                         </div>
                                 </div>

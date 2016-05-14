@@ -23,7 +23,7 @@ class Manager
         $query->bindValue(':adr_2', $adr_2);
         $query->bindValue(':tel', $tel);
         $query->execute();
-        return $query;  
+        header('Location: editionprofil.php');
     }
     
     public function selectuserbyid()

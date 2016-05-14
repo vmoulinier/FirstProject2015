@@ -43,15 +43,6 @@ class User
         $_SESSION['user'] = $this;
     }
     
-    public function connexion()
-    {
-        if (isset($_SESSION['user'])) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    
     public function getMail(){
         return $this->mail;
     } 
@@ -62,7 +53,7 @@ class User
     
     public function getId(){
         return $this->id;
-    }
+    }    
     
     public function setMail($var){
         $this->mail = $var;
@@ -75,4 +66,6 @@ class User
     public function setId($var){
         $this->id = $var;
     }
+    
+
 }
