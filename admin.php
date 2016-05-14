@@ -1,14 +1,13 @@
 <?php 
 include 'includes/db_connect.php'; 
 session_start(); 
-include ( "head.php"); 
-
+if ($manager->connexionadmin() == true){ } else { header('Location: index.php'); };
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <body>
-    <?php if ($manager->connexionadmin() == true){ } else { header('Location: index.php'); }?>
+    <?php include ( "head.php"); ?>
     <div class="bodytest">
         <?php include 'menu.php'; ?>
         <!-- Ligne -->

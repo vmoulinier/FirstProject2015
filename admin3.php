@@ -1,7 +1,7 @@
 <?php 
 include 'includes/db_connect.php'; 
 session_start(); 
-include ( "head.php"); 
+if ($manager->connexionadmin() == true){ } else { header('Location: index.php'); };
 ini_set( "display_errors", 0); error_reporting(0); 
 setlocale (LC_TIME, 'fr_FR','fra'); date_default_timezone_set("Europe/Paris"); mb_internal_encoding("UTF-8");
 if (isset($_POST["payer"]))
@@ -17,7 +17,7 @@ if (isset($_POST["payer"]))
 <html lang="en">
 
 <body>
-    <?php if ($manager->connexionadmin() == true){ } else { header('Location: index.php'); }?>
+    <?php include ( "head.php");  ?>
     <div class="bodytest">
         <!-- menu/icone -->
         <?php include 'menu.php' ?>
